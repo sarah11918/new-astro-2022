@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SvelteCounter from '../components/SvelteCounter.svelte';
+
+let title = "Page Two"
+---
+<BaseLayout title={title}>
+
+            <p>A Svelte Counter on Page Two</p>
+            <SvelteCounter client:load />
+
+</BaseLayout>
